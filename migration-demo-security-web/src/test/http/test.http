@@ -1,0 +1,5 @@
+# @name Demo
+GET {{host}}/demo/info
+Authorization: Basic {{username}} {{password}}
+
+###

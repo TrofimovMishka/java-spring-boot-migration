@@ -1,0 +1,38 @@
+#spring:
+  h2:
+    console.enabled: true
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  cassandra:
+    connection:
+      connect-timeout: 30
+  data:
+    redis:
+      client-name: redis
+      cluster:
+        max-redirects: 3
+
+
+#spring:
+#  h2:
+#    console.enabled: true
+#  datasource:
+#    url: jdbc:h2:mem:mydb
+#    username: sa
+#    password:
+#    driverClassName: org.h2.Driver
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect
+#  data:
+#    cassandra:
+#      connection:
+#        connect-timeout: 30
+#  redis:
+#    client-name: redis
+#    cluster:
+#      max-redirects: 3

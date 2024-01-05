@@ -1,0 +1,25 @@
+# @name Demo
+GET {{host}}/demo/info
+
+> {%
+
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+%}
+
+###
+
+# @name Demo trailing
+GET {{host}}/demo/info/
+
+> {%
+
+    client.test("Request executed successfully", function() {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+
+%}
+
+###

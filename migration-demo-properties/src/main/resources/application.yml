@@ -1,0 +1,15 @@
+spring:
+  data:
+    cassandra:
+      connection:
+        connect-timeout: 30
+  redis:
+    client-name: name
+    cluster:
+      max-redirects: 10
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE

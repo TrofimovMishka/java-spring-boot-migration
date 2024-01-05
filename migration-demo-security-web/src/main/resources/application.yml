@@ -1,0 +1,13 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
+
+spring:
+  security:
+    user:
+      password: "QAZ2wsx"
+
+server:
+  port: 8383
